@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant: Random Agent Selector</title>
+    <link rel="stylesheet" href="stylesheet.css">
+
+</head>
+<body>
+    <header>Made by Zehno - Copywright 2025</header>
+    <h1>RANDOM AGENT SELECTOR FOR VALORANT!</h1>
+    <p>Struggle to choose which agent to play or want to spice up your next match?</p>
+    <hr>
+
+    <div class="rowone">
+
+    
+    <div class="agentgroup">
+         <img class="agenthead" src="agenticons/Brimstone_icon.webp" alt="Brimstone_icon">
+        <div>Brimstone</div> 
+    </div>
+
+    <div class="agentgroup">
+        <img class="agenthead" src="agenticons/Omen_icon.webp" alt="Omen_icon">
+        <div>Omen</div>
+    </div>
+
+    <div class="agentgroup">
+        <img class="agenthead" src="agenticons/Viper_icon.webp" alt="Omen_icon">
+        <div>Viper</div>
+    </div>
+
+    </div>
+
+    <div>Raze</div>
+    <div>Cypher</div>
+    <div>Sage</div>
+    <div>Sova</div>
+    <div>Phoenix</div>
+    <div>Jett</div>
+    <div>Breach</div>
+    <div>Reyna</div>
+    <div>Killjoy</div>
+    <div>Skye</div>
+    <div>Yoru</div>
+    <div>Astra</div>
+    <div>KAY/O</div>
+    <div>Chamber</div>
+    <div>Neon</div>
+    <div>Fade</div>
+    <div>Harbor</div>
+    <div>Gekko</div>
+    <div>Deadlock</div>
+    <div>Iso</div>
+    <div>Clove</div>
+    <div>Vyse</div>
+    <div>Tejo</div>
+    <div>Waylay</div>
+
+    <button type="button" onclick="agentSelect()">AGENT SELECTOR</button>
+    
+    <script>
+       function  agentSelect() { 
+
+        const valAgents = [
+  "Brimstone",
+  "Viper",
+  "Omen",
+  "Sage",
+  "Phoenix",
+  "Sova",
+  "Cypher",
+  "Raze",
+  "Reyna",
+  "Jett",
+  "Killjoy",
+  "Breach",
+  "Skye",
+  "Yoru",
+  "Astra",
+  "Neon",
+  "KAY/O",
+  "Chamber",
+  "Fade",
+  "Harbor",
+  "Gekko",
+  "Tejo",
+  "Iso",
+  "Vyse",
+  "Waylay",
+  "Deadlock"
+];
+
+const randomAgent = Math.floor(Math.random() * valAgents.length);
+
+console.log(randomAgent, valAgents[randomAgent]);
+
+window.alert(valAgents[randomAgent]);
+       }
+    </script>
+</body>
+</html>
