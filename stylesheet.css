@@ -1,4 +1,22 @@
 .agenthead {
     border-radius: 85%;
-    max-width: 75px;
 }
+.rowone, .rowtwo, .rowthree, .rowfour, .rowfive, .rowsix, .rowseven, .roweight, .rownine {
+    display: flex;
+    justify-content: space-between;
+    border: 1px, solid, black;
+    margin: 2px;
+}
+
+button {
+    background-color:red;
+    color: white;
+    display:inline-block;
+    font-size: large;
+    border-radius: 12px;
+}
+
+.wrapper {
+    text-align: center;
+}
+
