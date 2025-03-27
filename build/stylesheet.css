@@ -108,3 +108,7 @@ padding-left: 25px;
     display: none;
     
 }
+.home {
+    font-weight: bold;
+    color:darkred;
+}
