@@ -53,4 +53,10 @@ img {
 
 header {
     font-style: italic;
+    font-size: small;
+    opacity: 75%;
+}
+
+.headers {
+text-align: center;
 }
