@@ -1,11 +1,13 @@
 .agenthead {
     border-radius: 85%;
 }
-.rowone, .rowtwo, .rowthree, .rowfour, .rowfive, .rowsix, .rowseven, .roweight, .rownine {
-    display: flex;
-    justify-content: space-between;
-    border: 1px, solid, black;
-    margin: 2px;
+.row {
+    display:flex;
+    justify-content: center;
+}
+.oddrow {
+    display:flex;
+    justify-content: center;
 }
 
 button {
@@ -18,13 +20,33 @@ button {
 
 .wrapper {
     text-align: center;
+    margin-top: 20px;
+    font-weight: bolder;
+    justify-content: center;
 }
 
 .agentname {
     font-weight: bold;
     text-align: center;
+    font-size: 16px;
 }
 
 .ability {
     background-color: firebrick;
+}
+
+body {
+    background-image: linear-gradient(rgb(95, 95, 247), rgb(61, 82, 150));
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+img {
+   width: 60px;
+    height:auto;
+    margin:15px;
+    display:block;
+  }
+
+header {
+    font-style: italic;
 }
