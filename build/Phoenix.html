@@ -9,6 +9,7 @@
   </head>
 
   <body>
+    <script src="index.js"></script>
     <div class="maxwidth">
       <div class="agenttext">
         <div class="text">
@@ -27,7 +28,11 @@
       <h2>Agent Abilities</h2>
       <div class="container">
         <div class="abilitycontainer">
-          <img class="abilitypic" src="agentdata\Phoenix\Curveball.webp" />
+         <button id="abilityButton" onclick="showAbility()"><img class="abilitypic" id:"abilityImg" src="agentdata\Phoenix\Curveball.webp" /></button>
+         <div class="abilityinfo" id="abilityInfo">
+          <h2 class="abilityname">Curveball</h2>
+          <p>EQUIP a flare orb that takes a curving path and detonates shortly after throwing. FIRE to curve the flare orb to the left, detonating and blinding any player who sees the orb. ALTERNATE FIRE to curve the flare orb to the right.</p>
+        
           <video
             class="abilityvid"
             width="320"
@@ -38,6 +43,7 @@
           >
             <source src="agentdata/Phoenix/Curveball.mp4" type="video/mp4" />
           </video>
+          </div>
         </div>
 
         <div class="abilitycontainer">
