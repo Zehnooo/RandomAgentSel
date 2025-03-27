@@ -11,13 +11,14 @@
     justify-content: center;
 }
 
-button .selec {
+.selec {
     background-color:darkred;
     color: white;
     font-size: large;
     border-radius: 12px;
     border:3px solid black;
     font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .wrapper {
@@ -39,6 +40,7 @@ body {
     background-image:linear-gradient(90deg, rgba(0,44,143,1) 0%, rgba(73,114,184,1) 35%, rgba(11,75,134,1) 100%);
     background-repeat: no-repeat;
     color:snow;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 img.agenthead  {
     width: 50px;
