@@ -3,17 +3,96 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agent Information</title>
-    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Agent Abilities</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .active {
+        background-color: rgba(255, 255, 255, 0.1);
+        filter: grayscale(0);
+      }
+    </style>
   </head>
-  <body>
-    <h1>View Your Agent's Info!</h1>
-    <h2>
-      <ul>
-        Agent Abilities
-      </ul>
-    </h2>
+<body class="bg-[#0f1923] text-white min-h-screen flex items-center justify-center p-8" 
+      style="background-image: url('https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/74075835ddc4e8457fb30f7fe560d2aff6d51702-5120x1772.png?auto=format&fit=fill&q=80&w=1920'); 
+             background-size: cover; 
+             background-position: center; 
+             background-repeat: no-repeat;">
+  <section class="max-w-6xl w-full bg-[#1c2a36] p-10 rounded-lg shadow-lg flex gap-10">
+      
+      <div class="w-1/2">
+        <h2 class="text-4xl font-extrabold uppercase mb-6">Special Abilities</h2>
+        <div id="abilities" class="flex justify-between gap-4">
+          
+          <div onclick="selectAbility(0)" class="p-4 rounded cursor-pointer grayscale hover:grayscale-0 transition">
+            <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/a0c72fe005e2f87f60f38fdb440569271c51a8fb-128x128.png" class="w-10 h-10 mx-auto" />
+          </div>
+          <div onclick="selectAbility(1)" class="p-4 rounded cursor-pointer grayscale hover:grayscale-0 transition">
+            <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/18cb69683c16d11590eda4c5458a7025f0667895-128x128.png" class="w-10 h-10 mx-auto" />
+          </div>
+          <div onclick="selectAbility(2)" class="p-4 rounded cursor-pointer grayscale hover:grayscale-0 transition">
+            <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/8c5e94bfc817e5d35eca7692fd242404de5ac5dd-128x128.png" class="w-10 h-10 mx-auto" />
+          </div>
+          <div onclick="selectAbility(3)" class="p-4 rounded cursor-pointer grayscale hover:grayscale-0 transition">
+            <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/8d8e6c956af64b241e49e3625b3cb02fcc61eb09-128x128.png" class="w-10 h-10 mx-auto" />
+          </div>
+        </div>
+      </div>
 
-    <img class="ability" src="agentdata/Omen/Dark_Cover.webp" />
+    
+      <div class="w-1/2">
+        <video id="abilityVideo" autoplay muted loop playsinline class="rounded-lg shadow-lg w-full h-auto aspect-video object-cover mb-4">
+          <source src="https://cdn.cloudflare.steamstatic.com/steam/apps/256658589/movie480.webm" type="video/webm" />
+        </video>
+        <h3 id="abilityName" class="text-2xl font-extrabold mb-2">UPDRAFT</h3>
+        <p id="abilityDesc" class="text-white/70 text-sm leading-relaxed">
+          Instantly propel Jett high into the air.
+        </p>
+      </div>
+    </section>
+
+    <script>
+      const abilities = [
+        {
+          name: "UPDRAFT",
+          desc: "Instantly propel Jett high into the air.",
+          video: "https://cdn.cloudflare.steamstatic.com/steam/apps/256658589/movie480.webm"
+        },
+        {
+          name: "TAILWIND",
+          desc: "Dash a short distance in the direction you're moving.",
+          video: "https://cdn.cloudflare.steamstatic.com/steam/apps/256683190/movie480.webm"
+        },
+        {
+          name: "CLOUD BURST",
+          desc: "Throw a projectile that expands into a brief vision-blocking cloud.",
+          video: "https://cdn.cloudflare.steamstatic.com/steam/apps/256715973/movie480.webm"
+        },
+        {
+          name: "BLADE STORM",
+          desc: "Equip a set of accurate throwing knives. Restores on kill.",
+          video: "https://cdn.cloudflare.steamstatic.com/steam/apps/256784570/movie480.webm"
+        }
+      ];
+
+      function selectAbility(index) {
+        const video = document.getElementById("abilityVideo");
+        const name = document.getElementById("abilityName");
+        const desc = document.getElementById("abilityDesc");
+
+        
+        video.querySelector("source").src = abilities[index].video;
+        video.load();
+        name.textContent = abilities[index].name;
+        desc.textContent = abilities[index].desc;
+
+        
+        document.querySelectorAll("#abilities > div").forEach((el, i) => {
+          el.classList.toggle("active", i === index);
+        });
+      }
+
+      
+      selectAbility(0);
+    </script>
   </body>
 </html>
