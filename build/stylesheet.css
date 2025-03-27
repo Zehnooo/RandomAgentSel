@@ -51,10 +51,10 @@ img {
     display:block;
   }
 
-header {
+footer {
     font-style: italic;
     font-size: small;
-    opacity: 75%;
+    opacity: 25%;
 }
 
 .headers {
