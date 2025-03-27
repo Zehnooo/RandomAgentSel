@@ -83,5 +83,6 @@ padding-left: 25px;
 
 .agentphoto {
   max-width: 250px;
-  display:flex;
+  align-items: right;
+  display: flex;
 }
