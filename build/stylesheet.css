@@ -78,5 +78,10 @@ padding-left: 25px;
 }
 
 .maxwidth {
-    width: 500px;
+    width: 1000px;
+}
+
+.agentphoto {
+  max-width: 250px;
+  display:flex;
 }
