@@ -95,3 +95,11 @@ padding-left: 25px;
 .text {
   display:inline-block;
 }
+
+#abilityButton {
+    visibility: visible;
+}
+
+#abilityInfo {
+    visibility: hidden;
+}

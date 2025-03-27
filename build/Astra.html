@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="stylesheet.css" />
   </head>
   <body>
+    <script src="index.js"></script>
     <h1>View Your Agent's Info!</h1>
     <h2>
       <ul>
@@ -14,6 +15,20 @@
       </ul>
     </h2>
 
-    <img class="ability" src="agentdata/Omen/Dark_Cover.webp" />
+    <div class="abilityone">
+      <button id="abilityButton" onclick="showAbility()">
+        <img class="ability" id:"abilityImg"
+        src="agentdata/Omen/Dark_Cover.webp" />
+      </button>
+
+      <div class="abilityinfo" id="abilityInfo">
+        <h2 class="abilityname">NOVA PULSE</h2>
+        <p>
+          Place Stars in Astral Form. ACTIVATE a Star to detonate a Nova Pulse.
+          The Nova Pulse charges briefly then strikes, concussing all players in
+          its area.
+        </p>
+      </div>
+    </div>
   </body>
 </html>
