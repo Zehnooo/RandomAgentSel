@@ -1,16 +1,9 @@
-function showAbility(){
+function showAbility(abilityId) {
+   const abilityInfo = document.getElementById(abilityId);
 
-const abilityButton = document.getElementById("abilityButton");
-const abilityInfo = document.getElementById("abilityInfo")
-
-abilityButton.addEventListener("click", event => {
-
-   if(abilityInfo.style.visibility==="hidden"){
-    abilityInfo.style.visibility="visible";
-    
+   if (abilityInfo.style.display === "block") {
+       abilityInfo.style.display = "none";
+   } else {
+       abilityInfo.style.display = "block";
    }
-   else {
-    abilityInfo.style.visibility="hidden";
-   }
-});
 }
