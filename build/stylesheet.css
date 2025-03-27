@@ -12,18 +12,17 @@
 }
 
 button {
-    background-color:red;
+    background-color:darkred;
     color: white;
-    display:inline-block;
     font-size: large;
     border-radius: 12px;
     border:3px solid black;
+    font-weight: bold;
 }
 
 .wrapper {
     text-align: center;
     margin-top: 20px;
-    font-weight: bolder;
     justify-content: center;
 }
 
@@ -31,16 +30,19 @@ button {
     font-weight: bold;
     text-align: center;
     font-size: 16px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 .ability {
-    background-color: firebrick;
+    background-color: darkred;
 }
 
 body {
     background-image:linear-gradient(90deg, rgba(0,44,143,1) 0%, rgba(73,114,184,1) 35%, rgba(11,75,134,1) 100%);
     background-repeat: no-repeat;
     height: 100vh;
+    color:snow;
 }
 img {
    width: 60px;
