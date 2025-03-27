@@ -78,11 +78,17 @@ padding-left: 25px;
 }
 
 .maxwidth {
-    width: 1000px;
+    width: 1250px;
 }
 
 .agentphoto {
-  max-width: 250px;
-  align-items: right;
-  display: flex;
+  max-width: 500px;
+}
+
+.agenttext {
+  display:inline-flex;
+}
+
+.text {
+  display:inline-block;
 }
