@@ -119,12 +119,12 @@ padding-left: 25px;
     display: none;
     overflow-wrap: break-word;
     inline-size:500px;
-    margin-inline:auto;
+    margin:auto;
     line-height: 125%;
+    line-height: 30px;
 }
 .agentart {
     max-width: 250px;
-    border:2px transparent white;
     
 }
 .agentheader {
@@ -135,9 +135,7 @@ padding-left: 25px;
     padding-bottom:20px;
     border-top: 3px groove  rgba(128, 128, 128, 0.55);
     border-bottom: 3px groove rgba(128, 128, 128, 0.55);
-    text-align: left;
-    border:2px transparent white;
-    
+    text-align: left;    
 }
 
 .selectedagent, .agentclass, .abilityname {
@@ -164,7 +162,6 @@ padding-left: 25px;
     margin-top: 75px;
     padding-top:25px;
     padding-left:25px;
-    border:2px transparent white;
     width:625px;
     overflow-wrap: break-word;
     
@@ -206,4 +203,10 @@ hr.hrind{
 }
 .agenttype{
     display:flex;
+    border-bottom: 2px groove rgba(128, 128, 128, 0.55);
+    margin-top:-30px;
+}
+
+p.agentdescrip {
+    line-height: 30px;
 }
