@@ -73,7 +73,7 @@ text-align: center;
     padding-bottom: 50px;
     padding-left: 15px;
     padding-right: 15px;
-   opacity: 75%;
+    opacity: 75%;
 }
 
 .abilityvid {
@@ -82,7 +82,7 @@ padding-left: 25px;
 }
 
 .maxwidth {
-    width: 1250px;
+    width: 1080px;
 }
 
 .agentphoto {
@@ -90,12 +90,9 @@ padding-left: 25px;
 }
 
 .agenttext {
-  display:inline-flex;
+margin-top:75px;  
 }
 
-.text {
-  display:inline-block;
-}
 
 #abilityButton1, #abilityButton2, #abilityButton3, #abilityButton4 {
     visibility: visible;
@@ -104,6 +101,7 @@ padding-left: 25px;
     padding-top:15px;
 }
 
+
 .abilityinfo {
     display: none;
     
@@ -111,4 +109,22 @@ padding-left: 25px;
 .home {
     font-weight: bold;
     color:darkred;
+}
+.agentart {
+    max-width: 250px;
+    
+}
+.agentheader {
+    display:flex;
+    border:2px solid white;
+    padding-left:25px;
+}
+
+.selectedagent {
+    color:darkred;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.container{
+    border:2px solid white;
 }
