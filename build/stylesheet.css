@@ -61,16 +61,17 @@ img.agenthead  {
      display:block;
      border:1px solid snow;
    }
+img.classtypeimg{
+    width: 50px;
+    height:auto;
+    margin:15px;
+    display:block;
+}
 
 footer {
     font-style: italic;
     font-size: small;
     opacity: 25%;
-}
-
-.headers {
-text-align: center;
-
 }
 
 .abilitycontainer {
@@ -128,15 +129,15 @@ padding-left: 25px;
 }
 .agentheader {
     display:flex;
-    padding-left:25px;
+    padding-left:20px;
     background-color:rgba(0, 0, 0, 0.75);
     border-radius: 25px;
     padding-bottom:20px;
     border-top: 3px groove  rgba(128, 128, 128, 0.55);
     border-bottom: 3px groove rgba(128, 128, 128, 0.55);
-    text-align: center;
+    text-align: left;
     border:2px transparent white;
-    display: flex;
+    
 }
 
 .selectedagent, .agentclass, .abilityname {
@@ -160,9 +161,12 @@ padding-left: 25px;
 }
 
 .agenttext {
-    padding-top:75px;
-    padding-left:175px;
+    margin-top: 75px;
+    padding-top:25px;
+    padding-left:25px;
     border:2px transparent white;
+    width:625px;
+    overflow-wrap: break-word;
     
 }
 
@@ -199,4 +203,7 @@ hr.hrind{
     margin:auto;
     padding:35px;
     border-radius: 20px;;
+}
+.agenttype{
+    display:flex;
 }
