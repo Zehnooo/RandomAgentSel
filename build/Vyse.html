@@ -10,15 +10,17 @@
   <body>
     <script src="index.js"></script>
     <div class="maxwidth">
+      <div class="pagehead">
+        <h1>View Your Agent's Info!</h1>
+      </div>
+
       <div class="agentheader">
         <div class="agenttext">
           <div class="text">
-            <h1>View Your Agent's Info!</h1>
-            <h2>
-              Your agent is:
-              <p class="selectedagent">AGENT NAME</p>
-            </h2>
-            <h3>Agent Type: AGENT TYPE</h3>
+            <h1>
+              Your agent is:<span class="selectedagent"> AGENT NAME</span>
+            </h1>
+            <h2>Agent Type:<span class="agentclass"> AGENT TYPE</span></h2>
           </div>
         </div>
         <div class="agentart">
@@ -26,105 +28,118 @@
         </div>
       </div>
 
-      <h2>Agent Abilities</h2>
-      <div class="container">
-        <div class="abilitycontainer">
-          <button id="abilityButton1" onclick="showAbility('abilityInfo1')">
-            <img
-              class="abilitypic"
-              id="abilityImg1"
-              src="PATH_TO_ABILITY_IMAGE"
-            />
-          </button>
-          <div class="abilityinfo" id="abilityInfo1">
-            <h2 class="abilityname">ABILITY ONE</h2>
-            <p>Ability description</p>
-            <video
-              class="abilityvid"
-              width="320"
-              height="240"
-              autoplay
-              loop
-              muted
-            >
-              <source src="PATH_TO_ABILITY_VIDEO" type="video/mp4" />
-            </video>
+      <h1 class="pagehead">Agent Abilities</h1>
+      <section>
+        <div class="container">
+          <div
+            class="abilitycontainer"
+            style="border-bottom: 2px groove rgba(128, 128, 128, 0.55)"
+          >
+            <button id="abilityButton1" onclick="showAbility('abilityInfo1')">
+              <img
+                class="abilitypic"
+                id="abilityImg1"
+                src="PATH_TO_ABILITY_IMAGE"
+              />
+            </button>
+            <div class="abilityinfo" id="abilityInfo1">
+              <h2 class="abilityname">ABILITY ONE</h2>
+              <p>Ability description</p>
+              <video
+                class="abilityvid"
+                width="320"
+                height="240"
+                autoplay
+                loop
+                muted
+              >
+                <source src="PATH_TO_ABILITY_VIDEO" type="video/mp4" />
+              </video>
+            </div>
           </div>
-        </div>
 
-        <div class="abilitycontainer">
-          <button id="abilityButton2" onclick="showAbility('abilityInfo2')">
-            <img
-              class="abilitypic"
-              id="abilityImg2"
-              src="PATH_TO_ABILITY_IMAGE"
-            />
-          </button>
-          <div class="abilityinfo" id="abilityInfo2">
-            <h2 class="abilityname">ABILITY TWO</h2>
-            <p>Ability description</p>
-            <video
-              class="abilityvid"
-              width="320"
-              height="240"
-              autoplay
-              loop
-              muted
-            >
-              <source src="PATH_TO_ABILITY_VIDEO" type="video/mp4" />
-            </video>
+          <div
+            class="abilitycontainer"
+            style="border-bottom: 2px groove rgba(128, 128, 128, 0.55)"
+          >
+            <button id="abilityButton2" onclick="showAbility('abilityInfo2')">
+              <img
+                class="abilitypic"
+                id="abilityImg2"
+                src="PATH_TO_ABILITY_IMAGE"
+              />
+            </button>
+            <div class="abilityinfo" id="abilityInfo2">
+              <h2 class="abilityname">ABILITY TWO</h2>
+              <p>Ability description</p>
+              <video
+                class="abilityvid"
+                width="320"
+                height="240"
+                autoplay
+                loop
+                muted
+              >
+                <source src="PATH_TO_ABILITY_VIDEO" type="video/mp4" />
+              </video>
+            </div>
           </div>
-        </div>
 
-        <div class="abilitycontainer">
-          <button id="abilityButton3" onclick="showAbility('abilityInfo3')">
-            <img
-              class="abilitypic"
-              id="abilityImg3"
-              src="PATH_TO_ABILITY_IMAGE"
-            />
-          </button>
-          <div class="abilityinfo" id="abilityInfo3">
-            <h2 class="abilityname">ABILITY THREE</h2>
-            <p>Ability description</p>
-            <video
-              class="abilityvid"
-              width="320"
-              height="240"
-              autoplay
-              loop
-              muted
-            >
-              <source src="PATH_TO_ABILITY_VIDEO" type="video/mp4" />
-            </video>
+          <div
+            class="abilitycontainer"
+            style="border-bottom: 2px groove rgba(128, 128, 128, 0.55)"
+          >
+            <button id="abilityButton3" onclick="showAbility('abilityInfo3')">
+              <img
+                class="abilitypic"
+                id="abilityImg3"
+                src="PATH_TO_ABILITY_IMAGE"
+              />
+            </button>
+            <div class="abilityinfo" id="abilityInfo3">
+              <h2 class="abilityname">ABILITY THREE</h2>
+              <p>Ability description</p>
+              <video
+                class="abilityvid"
+                width="320"
+                height="240"
+                autoplay
+                loop
+                muted
+              >
+                <source src="PATH_TO_ABILITY_VIDEO" type="video/mp4" />
+              </video>
+            </div>
           </div>
-        </div>
 
-        <div class="abilitycontainer">
-          <button id="abilityButton4" onclick="showAbility('abilityInfo4')">
-            <img
-              class="abilitypic"
-              id="abilityImg4"
-              src="PATH_TO_ABILITY_IMAGE"
-            />
-          </button>
-          <div class="abilityinfo" id="abilityInfo4">
-            <h2 class="abilityname">ABILITY FOUR</h2>
-            <p>Ability description</p>
-            <video
-              class="abilityvid"
-              width="320"
-              height="240"
-              autoplay
-              loop
-              muted
-            >
-              <source src="PATH_TO_ABILITY_VIDEO" type="video/mp4" />
-            </video>
+          <div class="abilitycontainer">
+            <button id="abilityButton4" onclick="showAbility('abilityInfo4')">
+              <img
+                class="abilitypic"
+                id="abilityImg4"
+                src="PATH_TO_ABILITY_IMAGE"
+              />
+            </button>
+            <div class="abilityinfo" id="abilityInfo4">
+              <h2 class="abilityname">ABILITY FOUR</h2>
+              <p>Ability description</p>
+              <video
+                class="abilityvid"
+                width="320"
+                height="240"
+                autoplay
+                loop
+                muted
+              >
+                <source src="PATH_TO_ABILITY_VIDEO" type="video/mp4" />
+              </video>
+            </div>
           </div>
         </div>
-      </div>
-      <a class="home" href="index.html">Return to Agent Select</a>
+      </section>
+      <button style="background-color: transparent; opacity: 75%">
+        <a class="home" href="index.html">Return to Agent Select</a>
+      </button>
     </div>
 
     <script></script>
