@@ -112,12 +112,11 @@ padding-left: 25px;
 .home {
     font-weight: bold;
     color:darkred;
-    background-color:  rgba(128, 128, 128, 0.25);
+    background-color:  rgba(128, 128, 128, 0.15);
 }
 .agentart {
     max-width: 250px;
-    border:2px solid white;
-    margin-left:175px;
+    border:2px transparent white;
     
 }
 .agentheader {
@@ -129,7 +128,7 @@ padding-left: 25px;
     border-top: 3px groove  rgba(128, 128, 128, 0.55);
     border-bottom: 3px groove rgba(128, 128, 128, 0.55);
     text-align: center;
-    border:2px solid white;
+    border:2px transparent white;
     display: flex;
 }
 
@@ -156,11 +155,12 @@ hr.hragt {
     width:50%;
     margin-bottom:20px;
     margin-inline: auto;
+    border-color: rgba(128, 128, 128, 0.85);
 }
 .agenttext {
     padding-top:75px;
     padding-left:175px;
-    border:2px solid white;
+    border:2px transparent white;
     
 }
 
