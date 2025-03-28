@@ -125,7 +125,7 @@ padding-left: 25px;
 }
 .agentart {
     max-width: 250px;
-    
+    padding-top:25px;
 }
 .agentheader {
     display:flex;
@@ -209,4 +209,7 @@ hr.hrind{
 
 p.agentdescrip {
     line-height: 30px;
+}
+.headers{
+   text-align: center;
 }
