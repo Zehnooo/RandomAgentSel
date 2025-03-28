@@ -31,116 +31,124 @@
           />
         </div>
       </div>
+      <h2 class="pagehead">Agent Abilities</h2>
+      <hr />
+      <section>
+        <div class="container">
+          <div class="abilitycontainer">
+            <button id="abilityButton1" onclick="showAbility('abilityInfo1')">
+              <img class="abilitypic" id:"abilityImg"
+              src="agentdata\Phoenix\Curveball.webp" />
+            </button>
+            <div class="abilityinfo" id="abilityInfo1">
+              <h2 class="abilityname">Curveball</h2>
+              <p>
+                EQUIP a flare orb that takes a curving path and detonates
+                shortly after throwing. FIRE to curve the flare orb to the left,
+                detonating and blinding any player who sees the orb. ALTERNATE
+                FIRE to curve the flare orb to the right.
+              </p>
 
-      <div class="container">
-        <h2 class="pagehead">Agent Abilities</h2>
-        <hr />
-        <div class="abilitycontainer">
-          <button id="abilityButton1" onclick="showAbility('abilityInfo1')">
-            <img class="abilitypic" id:"abilityImg"
-            src="agentdata\Phoenix\Curveball.webp" />
-          </button>
-          <div class="abilityinfo" id="abilityInfo1">
-            <h2 class="abilityname">Curveball</h2>
-            <p>
-              EQUIP a flare orb that takes a curving path and detonates shortly
-              after throwing. FIRE to curve the flare orb to the left,
-              detonating and blinding any player who sees the orb. ALTERNATE
-              FIRE to curve the flare orb to the right.
-            </p>
+              <video
+                class="abilityvid"
+                width="320"
+                height="240"
+                autoplay
+                loop
+                muted
+              >
+                <source
+                  src="agentdata/Phoenix/Curveball.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </div>
 
-            <video
-              class="abilityvid"
-              width="320"
-              height="240"
-              autoplay
-              loop
-              muted
-            >
-              <source src="agentdata/Phoenix/Curveball.mp4" type="video/mp4" />
-            </video>
+          <div class="abilitycontainer">
+            <button id="abilityButton2" onclick="showAbility('abilityInfo2')">
+              <img class="abilitypic" id:"abilityImg"
+              src="agentdata/Phoenix/Hot_Hands.webp" />
+            </button>
+            <div class="abilityinfo" id="abilityInfo2">
+              <h2 class="abilityname">HOT HANDS</h2>
+              <p>
+                EQUIP a fireball. FIRE to throw a fireball that explodes after a
+                set amount of time or upon hitting the ground, creating a
+                lingering fire zone that damages enemies.
+              </p>
+
+              <video
+                class="abilityvid"
+                width="320"
+                height="240"
+                autoplay
+                loop
+                muted
+              >
+                <source src="agentdata/Phoenix/HotHands.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+
+          <div class="abilitycontainer">
+            <button id="abilityButton3" onclick="showAbility('abilityInfo3')">
+              <img class="abilitypic" id:"abilityImg"
+              src="agentdata/Phoenix/Blaze.webp" />
+            </button>
+            <div class="abilityinfo" id="abilityInfo3">
+              <h2 class="abilityname">BLAZE</h2>
+              <p>
+                EQUIP a flame wall. FIRE to create a line of flame that moves
+                forward, creating a wall of fire that blocks vision and damages
+                players passing through it. HOLD FIRE to bend the wall in the
+                direction of your crosshair.
+              </p>
+
+              <video
+                class="abilityvid"
+                width="320"
+                height="240"
+                autoplay
+                loop
+                muted
+              >
+                <source src="agentdata/Phoenix/Blaze.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+
+          <div class="abilitycontainer">
+            <button id="abilityButton4" onclick="showAbility('abilityInfo4')">
+              <img class="abilitypic" id:"abilityImg"
+              src="agentdata\Phoenix\Run_it_Back.webp" />
+            </button>
+            <div class="abilityinfo" id="abilityInfo4">
+              <h2 class="abilityname">RUN IT BACK</h2>
+              <p>
+                INSTANTLY place a marker at Phoenix’s location. While this
+                ability is active, dying or allowing the timer to expire will
+                end this ability and bring Phoenix back to this location with
+                full health.
+              </p>
+
+              <video
+                class="abilityvid"
+                width="320"
+                height="240"
+                autoplay
+                loop
+                muted
+              >
+                <source
+                  src="agentdata/Phoenix/RunItBack.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
           </div>
         </div>
-
-        <div class="abilitycontainer">
-          <button id="abilityButton2" onclick="showAbility('abilityInfo2')">
-            <img class="abilitypic" id:"abilityImg"
-            src="agentdata/Phoenix/Hot_Hands.webp" />
-          </button>
-          <div class="abilityinfo" id="abilityInfo2">
-            <h2 class="abilityname">HOT HANDS</h2>
-            <p>
-              EQUIP a fireball. FIRE to throw a fireball that explodes after a
-              set amount of time or upon hitting the ground, creating a
-              lingering fire zone that damages enemies.
-            </p>
-
-            <video
-              class="abilityvid"
-              width="320"
-              height="240"
-              autoplay
-              loop
-              muted
-            >
-              <source src="agentdata/Phoenix/HotHands.mp4" type="video/mp4" />
-            </video>
-          </div>
-        </div>
-
-        <div class="abilitycontainer">
-          <button id="abilityButton3" onclick="showAbility('abilityInfo3')">
-            <img class="abilitypic" id:"abilityImg"
-            src="agentdata/Phoenix/Blaze.webp" />
-          </button>
-          <div class="abilityinfo" id="abilityInfo3">
-            <h2 class="abilityname">BLAZE</h2>
-            <p>
-              EQUIP a flame wall. FIRE to create a line of flame that moves
-              forward, creating a wall of fire that blocks vision and damages
-              players passing through it. HOLD FIRE to bend the wall in the
-              direction of your crosshair.
-            </p>
-
-            <video
-              class="abilityvid"
-              width="320"
-              height="240"
-              autoplay
-              loop
-              muted
-            >
-              <source src="agentdata/Phoenix/Blaze.mp4" type="video/mp4" />
-            </video>
-          </div>
-        </div>
-
-        <div class="abilitycontainer">
-          <button id="abilityButton4" onclick="showAbility('abilityInfo4')">
-            <img class="abilitypic" id:"abilityImg"
-            src="agentdata\Phoenix\Run_it_Back.webp" />
-          </button>
-          <div class="abilityinfo" id="abilityInfo4">
-            <h2 class="abilityname">RUN IT BACK</h2>
-            <p>
-              INSTANTLY place a marker at Phoenix’s location. While this ability
-              is active, dying or allowing the timer to expire will end this
-              ability and bring Phoenix back to this location with full health.
-            </p>
-
-            <video
-              class="abilityvid"
-              width="320"
-              height="240"
-              autoplay
-              loop
-              muted
-            >
-              <source src="agentdata/Phoenix/RunItBack.mp4" type="video/mp4" />
-            </video>
-          </div>
-        </div>
-      </div>
+      </section>
       <a class="home" href="index.html">Return to Agent Select</a>
     </div>
 
