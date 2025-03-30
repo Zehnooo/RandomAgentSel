@@ -104,7 +104,8 @@ padding-left: 25px;
 }
 
 .agentphoto {
-  max-width: 500px;
+    max-width: 500px;
+    
 }
 
 #abilityButton1, #abilityButton2, #abilityButton3, #abilityButton4 {
@@ -126,6 +127,7 @@ padding-left: 25px;
 .agentart {
     max-width: 250px;
     padding-top:25px;
+    padding-right:200px;    
 }
 .agentheader {
     display:flex;
