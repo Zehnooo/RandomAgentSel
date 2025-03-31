@@ -130,7 +130,7 @@ padding-left: 25px;
 .agentart {
     max-width: 250px;
     padding-top:25px;
-    padding-right:200px;    
+    padding-right:250px;    
 }
 .agentheader {
     display:flex;
@@ -141,6 +141,7 @@ padding-left: 25px;
     border-top: 3px groove  rgba(128, 128, 128, 0.55);
     border-bottom: 3px groove rgba(128, 128, 128, 0.55);
     text-align: left;    
+    margin:auto;
 }
 
 .selectedagent, .agentclass, .abilityname {

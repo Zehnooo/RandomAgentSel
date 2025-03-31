@@ -40,7 +40,7 @@
             <div class="abilityinfo" id="abilityInfo1">
               <h2 class="abilityname">ABILITY ONE</h2>
               <p>Ability description</p>
-              <video class="abilityvid" width="320" height="240" autoplay loop muted>
+              <video class="abilityvid" width="360" height="240" autoplay loop muted>
                 <source src="PATH_TO_ABILITY_VIDEO" type="video/mp4" />
               </video>
             </div>
@@ -53,7 +53,7 @@
             <div class="abilityinfo" id="abilityInfo2">
               <h2 class="abilityname">ABILITY TWO</h2>
               <p>Ability description</p>
-              <video class="abilityvid" width="320" height="240" autoplay loop muted>
+              <video class="abilityvid" width="360" height="240" autoplay loop muted>
                 <source src="PATH_TO_ABILITY_VIDEO" type="video/mp4" />
               </video>
             </div>
@@ -66,7 +66,7 @@
             <div class="abilityinfo" id="abilityInfo3">
               <h2 class="abilityname">ABILITY THREE</h2>
               <p>Ability description</p>
-              <video class="abilityvid" width="320" height="240" autoplay loop muted>
+              <video class="abilityvid" width="360" height="240" autoplay loop muted>
                 <source src="PATH_TO_ABILITY_VIDEO" type="video/mp4" />
               </video>
             </div>
@@ -79,7 +79,7 @@
             <div class="abilityinfo" id="abilityInfo4">
               <h2 class="abilityname">ABILITY FOUR</h2>
               <p>Ability description</p>
-              <video class="abilityvid" width="320" height="240" autoplay loop muted>
+              <video class="abilityvid" width="360" height="240" autoplay loop muted>
                 <source src="PATH_TO_ABILITY_VIDEO" type="video/mp4" />
               </video>
             </div>
