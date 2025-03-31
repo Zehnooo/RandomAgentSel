@@ -217,7 +217,32 @@ p.agentdescrip {
 }
 .agent-card.agent-head-selected {
     opacity:25%;
+    background-image: <img href='cross.jpg'>;
 }
 .agent-name-selected {
     opacity: 0;
 }
+
+.agent-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .agent-x-overlay::before {
+    content: '✖';
+    position: absolute;
+    top:50%;
+    right:20%;
+    transform: translate(-50%, -50%);
+    color: darkred;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    display: none;
+    z-index: 10;
+  }
+  
+  .agenthead.agent-head-selected + .agent-x-overlay::before {
+    display: block;
+  }
