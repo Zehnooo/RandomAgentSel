@@ -194,8 +194,8 @@ hr.hrind{
     }
 
  a {
-            color:snow;
-            text-decoration: none;
+     color:snow;
+     text-decoration: none;
         }
 
 .allrows{
@@ -210,17 +210,13 @@ hr.hrind{
     border-bottom: 2px groove rgba(128, 128, 128, 0.55);
     margin-top:-30px;
 }
-
 p.agentdescrip {
     line-height: 30px;
 }
 .headers{
    text-align: center;
 }
-.agent-card.agent-head-selected {
-    opacity:25%;
-    background-image: <img href='cross.jpg'>;
-}
+
 .agent-name-selected {
     opacity: 0;
 }
