@@ -42,9 +42,8 @@
     font-weight: bold;
     text-align: center;
     font-size: 16px;
-    padding-left: 4px;
-    padding-right: 4px;
 }
+
 
 body {
     background-image:url("SiteBackground.jpg");
@@ -59,6 +58,9 @@ img.agenthead  {
      display:block;
      border:1px solid snow;
    }
+   img.agenthead:hover {
+    border:1px solid darkred;
+}
 img.classtypeimg{
     width: 50px;
     height:auto;
@@ -227,7 +229,6 @@ p.agentdescrip {
     position: relative;
     display: inline-block;
   }
-  
   .agent-x-overlay::before {
     content: '✖';
     position: absolute;
@@ -236,11 +237,12 @@ p.agentdescrip {
     transform: translate(-50%, -50%);
     color: darkred;
     font-size: 30px;
-    font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.6);
+    
+    background-color: transparent;
     border-radius: 50%;
     display: none;
     z-index: 10;
+    pointer-events: none;
   }
   
   .agenthead.agent-head-selected + .agent-x-overlay::before {
