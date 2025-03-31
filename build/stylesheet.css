@@ -245,3 +245,6 @@ p.agentdescrip {
   .agenthead.agent-head-selected + .agent-x-overlay::before {
     display: block;
   }
+  .agenthead.agent-head-selected{
+    opacity: 25%;
+  }
